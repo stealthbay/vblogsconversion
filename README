@@ -1,0 +1,56 @@
+
+/* 
+	vBlog to vBulletin Forum Threads Converter
+	Created by Harry Taheem - https://StealthBay.com
+	June 2020 - v1
+	https://github.com/stealthbay/vblogsconversion
+	README
+*/
+
+
+Steps:
+
+1) Turn your forum off so it is in maintainence mode. (You cannot have anyone posting or creating new threads during this conversion)
+
+2) Create a new forum for your blogs, and store the forum ID
+
+3) Edit the files run.php & run2.php.
+
+4)Enter in your database credentials/connection information (DB, DBUsername, password)
+
+5)Edit the forumid field and replace "222" with your own blog forum ID.
+
+6) Upload both files to your /admincp directory
+
+7) Run the run.php file first (scoll down and make sure it says it has completed)
+
+8) Run the run2.php file next.
+
+9) Make sure you DELETE both run files from your admincp directory
+
+10)Update counters in the admincp portal
+
+Rebuild Forum Information
+Rebuild Thread Information
+Rebuild Post Cache
+
+11) check your new blog posts that are now in your new blog forum.
+
+
+Limitations:
+
+
+The posts may get converted with a moderated status for each thread. To fix this you may go through them (Select ALL) and approve them so they show up in the forum.
+
+The threads will show up in the closed thread status. Feel free to go through them (Select All) option and use the Open threads option to allow people to further comment in them.
+
+The date for each post might show up with the year 1969, this is because the timeformat is not converted. But, any further comments or posts will show the current proper date.
+
+
+
+
+
+
+
+
+
